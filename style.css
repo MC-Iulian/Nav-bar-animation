@@ -1,0 +1,40 @@
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 50px;
+    justify-content: center;
+}
+
+a{
+    position: relative;
+    cursor: pointer;
+    color: #efefee;
+    font-size: 28px;
+    padding: 0.5rem 1rem;
+    transition: color 0.25s;
+    text-decoration: none;
+}
+
+a::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgb(248, 248, 248);
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+}
+
+a:hover{
+    color: rgb(68, 7, 180);
+}
+
+a:hover::after{
+    scale: 1 1;
+}
+body{
+    background-color: rgb(5, 2, 8);
+}
